@@ -6,6 +6,7 @@ import { CgProfile } from "react-icons/cg";
 import Profile from "./Profile";
 import axios from "axios";
 import FreeBook from "./FreeBook";
+import { Link } from "react-router-dom";
 
 const Navabar = () => {
   const [name, setName] = useState("");
@@ -60,16 +61,20 @@ const Navabar = () => {
   const navitems = (
     <>
       <li>
-        <a href="/">Home</a>
+        {/* <a href="/">Home</a> */}
+        <Link to={"/"}>Home</Link>
       </li>
       <li>
-        <a href="/course">Premium Reads</a>
+        {/* <a href="/course">Premium Reads</a> */}
+        <Link to={"/course"}>Premium Reads</Link>
       </li>
       <li>
-        <a href="/Conact">Contact</a>
+        {/* <a href="/Conact">Contact</a> */}
+        <Link to={"/Conact"}>Contact</Link>
       </li>
       <li>
-        <a href="/About">About</a>
+        {/* <a href="/About">About</a> */}
+        <Link to={"/About"}>About</Link>
       </li>
     </>
   );
